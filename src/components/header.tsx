@@ -13,12 +13,12 @@ export default function Header() {
     "Tracking",
   ];
   return (
-    <div className="fixed top-0 bg-blue-500 p-2 shadow-lg">
+    <div className="fixed w-full top-0 bg-blue-500 p-2 shadow-lg">
       {menus &&
         menus.map((item) => {
           return (
             <Link
-              to="./"
+              to={`/${item.toLocaleLowerCase()}`}
               className="p-2 m-1 text-white font-bold hover:bg-green-400 rounded-lg"
             >
               {item}

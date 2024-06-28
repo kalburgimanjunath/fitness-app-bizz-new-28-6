@@ -17,17 +17,15 @@ function App() {
     <main className="flex flex-col items-center gap-8 py-16 max-w-[1280px] mx-auto">
       <Header />
       <Routes>
+        <Route path="/plan" element={<Plan />} />
+        <Route path="/tracking" element={<Tracking />} />
+        <Route path="/recommendation" element={<Recommendation />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/journey" element={<Journey />} />
+        <Route path="/nuetrition" element={<Nuetrition />} />
+        <Route path="/excersisevideos" element={<ExcersiseVideos />} />
         <Route path="/*" exact element={<Home />} />
-        <Route path="./home" element={<Clothing />} />
-        <Route path="./home" element={<Clothing />} />
-        <Route path="./plan" element={<Plan />} />
-        <Route path="./tracking" element={<Tracking />} />
-        <Route path="./recommendation" element={<Recommendation />} />
-        <Route path="./support" element={<Support />} />
-        <Route path="./resources" element={<Resources />} />
-        <Route path="./journey" element={<Journey />} />
-        <Route path="./nuetrition" element={<Nuetrition />} />
-        <Route path="./excersisevideos" element={<ExcersiseVideos />} />
       </Routes>
     </main>
   );
