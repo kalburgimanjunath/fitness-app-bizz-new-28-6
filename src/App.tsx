@@ -10,6 +10,7 @@ import {
   Recommendation,
   Support,
   Tracking,
+  ExcersiseVideoDetail,
 } from "./pages/";
 import { Routes, Route } from "react-router-dom";
 function App() {
@@ -24,8 +25,10 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/journey" element={<Journey />} />
         <Route path="/nuetrition" element={<Nuetrition />} />
+        <Route path="/:id" element={<ExcersiseVideoDetail />} />
         <Route path="/excersisevideos" element={<ExcersiseVideos />} />
-        <Route path="/*" exact element={<Home />} />
+
+        <Route path="/*" exact element={<ExcersiseVideos />} />
       </Routes>
     </main>
   );

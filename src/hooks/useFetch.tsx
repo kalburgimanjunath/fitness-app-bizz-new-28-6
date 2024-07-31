@@ -1,14 +1,12 @@
-import { useState } from "react";
-import Card from "../components/card";
-import Hero from "../components/hero";
 import axios from "axios";
-export default function Excersise() {
-  const items = ["Warm-up exercises", "Strength training", "Cardio workouts"];
+import { useState } from "react";
+
+export default function useFetch(url) {
   const [data, setData] = useState([]);
   const loadData = async () => {
     const options = {
       method: "GET",
-      url: "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
+      url: url,
       params: {
         limit: "10",
         offset: "0",
@@ -29,14 +27,5 @@ export default function Excersise() {
   useState(() => {
     loadData();
   }, [data]);
-  console.log(data);
-  return (
-    <div>
-      <Hero
-        title="Learn to be fit..."
-        subtitle="Watch these step-by-step instructional videos to learn a wide range of exercises and techniques."
-      />
-      <Card items={data} />
-    </div>
-  );
+  return { data: data };
 }
