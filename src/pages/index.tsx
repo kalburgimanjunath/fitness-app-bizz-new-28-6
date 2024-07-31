@@ -9,7 +9,7 @@ import Resources from "./resources";
 import Support from "./support";
 import Tracking from "./tracking";
 import ExcersiseVideoDetail from "./excersisevideo_detail";
-
+import Dance1 from "./dance1";
 export {
   Home,
   ExcersiseVideos,
@@ -22,5 +22,5 @@ export {
   Recommendation,
   Support,
   Tracking,
-  Dance,
+  Dance1,
 };

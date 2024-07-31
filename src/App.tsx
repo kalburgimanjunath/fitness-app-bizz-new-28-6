@@ -11,7 +11,7 @@ import {
   Support,
   Tracking,
   ExcersiseVideoDetail,
-  Dance,
+  Dance1,
 } from "./pages/";
 import { Routes, Route } from "react-router-dom";
 function App() {
@@ -25,7 +25,7 @@ function App() {
         <Route path="/support" element={<Support />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/journey" element={<Journey />} />
-        <Route path="/dance" element={<Dance />} />
+        <Route path="/dance" element={<Dance1 />} />
         <Route path="/nuetrition" element={<Nuetrition />} />
         <Route path="/:id" element={<ExcersiseVideoDetail />} />
         <Route path="/excersisevideos" element={<ExcersiseVideos />} />
