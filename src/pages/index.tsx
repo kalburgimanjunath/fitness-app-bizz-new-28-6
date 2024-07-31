@@ -22,4 +22,5 @@ export {
   Recommendation,
   Support,
   Tracking,
+  Dance,
 };

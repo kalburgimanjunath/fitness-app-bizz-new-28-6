@@ -38,6 +38,9 @@ export default function ExcersiseVideoDetail() {
           Back
         </Link>
       </div>
+      <div className="font-bold m-2 text-2xl text-center text-blue-500 uppercase m-2">
+        Exercise:{id}
+      </div>
       <div className="grid md:grid-cols-2 xs:grid-cols-1 m-2">
         {data &&
           data.map((item, index) => {

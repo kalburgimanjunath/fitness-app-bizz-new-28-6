@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const menus = [
     { title: "Home", link: "" },
+    { title: "Dance Fitness", link: "dance" },
     // { title: "ExcersiseVideos", link: "ExcersiseVideos" },
     // { title: "Clothing", link: "Clothing" },
     // { title: "Nuetrition", link: "Nuetrition" },
@@ -19,7 +20,7 @@ export default function Header() {
           return (
             <Link
               to={`/${item.link.toLocaleLowerCase()}`}
-              className="p-2 m-1 text-white font-bold hover:bg-green-400 rounded-lg"
+              className="p-2 m-1 text-white font-bold hover:border-b-1 hover:bg-blue-600 rounded-lg"
             >
               {item.title}
             </Link>
